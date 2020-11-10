@@ -1,0 +1,184 @@
+1)package main
+
+import "fmt"
+
+func main() {
+   var x float64
+   var y float64
+   var z  float64
+   x = 20.0
+   y=50.0
+   z=x+y
+   fmt.Println(z)
+
+   fmt.Printf("z is of type %T\n", z)
+}
+
+70
+z is of type float64
+
+Program exited.
+
+2)package main
+
+import "fmt"
+
+func main() {
+   x := 5
+   y := 5
+ var z int
+   z=x*y
+   fmt.Println(z)
+   fmt.Printf("z is of type %T\n", z)
+}
+
+25
+z is of type int
+
+Program exited.
+3)package main
+
+import "fmt"
+
+func main() {
+   x := 10
+   y := 5
+ var z int
+   z=x/y
+   fmt.Println(z)
+   fmt.Printf("z is of type %T\n", z)
+}
+
+2
+z is of type int
+
+Program exited.
+
+4)package main
+import "fmt"
+func main(){
+var x,y=35,7
+fmt.printf("x + y = %d\n", x+y)
+fmt.printf("x - y = %d\n", x-y)
+fmt.printf("x * y = %d\n", x*y)
+fmt.printf("x / y = %d\n", x/y)
+fmt.printf("x mod y = %d\n", x%y)
+x++
+fmt.printf("x++ = %d\n", x)
+y--
+fmt.printf("y-- = %d\n", y)
+}
+
+x+y = 42
+x-y = 28
+x*y = 245
+x/y = 5
+x mod y = 0
+x++ = 36
+y-- = 6
+
+5)package main
+
+import "fmt"
+
+func main() {
+	var x, y = 15, 25
+	x = y
+	fmt.Println("= ", x)
+
+	x = 15
+	x += y
+	fmt.Println("+=", x)
+
+	x = 50
+	x -= y
+	fmt.Println("-=", x)
+
+	x = 2
+	x *= y
+	fmt.Println("*=", x)
+
+	x = 100
+	x /= y
+	fmt.Println("/=", x)
+
+	x = 40
+	x %= y
+	fmt.Println("%=", x)
+}
+=  25
++= 40
+-= 25
+*= 50
+/= 4
+%= 15
+6)package main
+
+import "fmt"
+
+func main() {
+	var x, y = 15, 25
+
+	fmt.Println(x == y)
+	fmt.Println(x != y)
+	fmt.Println(x < y)
+	fmt.Println(x <= y)
+	fmt.Println(x > y)
+	fmt.Println(x >= y)
+}
+false
+true
+true
+true
+false
+false
+7)package main
+
+import "fmt"
+
+func main() {
+	var x, y, z = 10, 20, 30
+
+	fmt.Println(x < y && x > z)
+	fmt.Println(x < y || x > z)
+	fmt.Println(!(x == y && x > z))
+}
+
+false
+true
+true
+
+8)package main
+
+import "fmt"
+
+func main() {
+	var x uint = 9  //0000 1001
+	var y uint = 65 //0100 0001
+	var z uint
+
+	z = x & y
+	fmt.Println("x & y  =", z)
+
+	z = x | y
+	fmt.Println("x | y  =", z)
+
+	z = x ^ y
+	fmt.Println("x ^ y  =", z)
+
+	z = x << 1
+
+	fmt.Println("x << 1 =", z)
+
+	z = x >> 1
+	fmt.Println("x >> 1 =", z)
+}
+
+x & y  = 1
+x | y  = 73
+x ^ y  = 72
+x << 1 = 18
+x >> 1 = 4
+
+
+
